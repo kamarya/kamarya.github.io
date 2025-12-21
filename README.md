@@ -1,1 +1,0 @@
-# kamarya.github.io
