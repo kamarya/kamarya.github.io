@@ -8,6 +8,10 @@
         <lastmod>2009-05-28</lastmod>
     </url>
     <url>
+        <loc>https://kamarya.github.io/002-token-pqc/</loc>
+        <lastmod>2025-12-31</lastmod>
+    </url>
+    <url>
         <loc>https://kamarya.github.io/archive/</loc>
     </url>
     <url>
@@ -35,9 +39,33 @@
         <loc>https://kamarya.github.io/tags/information-theory/page/1/</loc>
     </url>
     <url>
+        <loc>https://kamarya.github.io/tags/jwt/</loc>
+    </url>
+    <url>
+        <loc>https://kamarya.github.io/tags/jwt/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://kamarya.github.io/tags/pqc/</loc>
+    </url>
+    <url>
+        <loc>https://kamarya.github.io/tags/pqc/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://kamarya.github.io/tags/security/</loc>
+    </url>
+    <url>
+        <loc>https://kamarya.github.io/tags/security/page/1/</loc>
+    </url>
+    <url>
         <loc>https://kamarya.github.io/tags/signal-processing/</loc>
     </url>
     <url>
         <loc>https://kamarya.github.io/tags/signal-processing/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://kamarya.github.io/tags/web-access-token/</loc>
+    </url>
+    <url>
+        <loc>https://kamarya.github.io/tags/web-access-token/page/1/</loc>
     </url>
 </urlset>
