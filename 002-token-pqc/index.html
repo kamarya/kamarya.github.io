@@ -112,8 +112,8 @@
 /* 1. Remove the border and padding from the container */
   .not-prose.mr-5.shrink-0.rounded-full {
     border: none !important;
-    padding: 0 !important;
-    background: transparent !important;
+    padding: 2px !important;
+    background: #FFD700 !important;
     box-shadow: none !important;
   }
 
@@ -364,7 +364,7 @@
 <h2 id="what-we-should-actually-do-today">What We Should Actually Do Today</h2>
 <p>You don't need to rewrite your entire auth service this afternoon. But if you’re making architectural decisions now, there are two things worth doing.</p>
 <p>First, if you're using symmetric signing (like HMAC-SHA256), make sure your secrets are at least 256 bits long. While quantum computers can speed up brute-force attacks (Grover’s Algorithm), they don't "break" symmetric encryption the way they break RSA. Doubling your key size is a cheap and effective shield.</p>
-<p>Second, start auditing where you use long-lived asymmetric keys. If you’re building something meant to last ten years, it’s time to start experimenting with hybrid approaches—layering a traditional signature with a post-quantum one.</p>
+<p>Second, start auditing where you use long-lived asymmetric keys. If you’re building something meant to last ten years, it’s time to start experimenting with hybrid approaches layering a traditional signature with a post-quantum one.</p>
 <p>The shift to a post-quantum world isn't going to happen overnight, but the decisions we make about our tokens today will determine how much we have to panic when that day finally arrives.</p>
 <table><thead><tr><th style="text-align: left">Token Type</th><th style="text-align: left">Category</th><th style="text-align: left">Primary Feature</th><th style="text-align: left">Cryptography</th><th style="text-align: left">Pros</th><th style="text-align: left">Cons</th></tr></thead><tbody>
 <tr><td style="text-align: left"><strong>Opaque Token</strong></td><td style="text-align: left">Reference</td><td style="text-align: left">Simple random string</td><td style="text-align: left">N/A (Stored in DB)</td><td style="text-align: left">Instant revocation; payload is never exposed.</td><td style="text-align: left">Requires DB lookup for every request (slower).</td></tr>
@@ -451,7 +451,7 @@
   <div class="mr-auto basis-full lg:basis-1/2">
     <!---->
     <!---->
-    &copy; 2009 - 2025<!---->
+    &copy; 2009 - 2026<!---->
     
     <a class="link" href="https://kamarya.github.io">
       Armand Kamary
