@@ -130,6 +130,8 @@
     height: 8rem !important;
   }
 </style>
+
+<meta name="google-site-verification" content="6eIFPvaGteWIGV6IMoARrdm_bySlIAJNSraeZ2A0hQI" />
 </head>
 
   <body class="text-black duration-200 ease-out dark:text-white">
@@ -360,7 +362,7 @@
 <h2 id="where-stateless-tokens-go-from-here">Where Stateless Tokens Go From Here</h2>
 <p>We can't always use opaque tokens, though. In microservices, we need the "value" that stateless tokens like JWT or PASETO provide. This is where things get interesting.</p>
 <p>The industry is currently pivoting toward Post-Quantum Cryptography (PQC). You’ll start hearing a lot more about algorithms like <strong>ML-DSA</strong> (formerly Dilithium). Unlike the math we use today, these are "lattice-based," which even quantum computers struggle to navigate.</p>
-<p>If you are looking for a modern path, I’d keep a close eye on <strong>PASETO</strong>. Unlike JWT, which is a bit of a "choose your own adventure" when it comes to security, PASETO is designed to be versioned. The upcoming <a href="https://github.com/paseto-standard/paseto-spec/pull/36">Post-Quantum PASETO (v5, v6)</a> are specifically built to swap out vulnerable curves for these new, quantum-safe signatures. It’s a much cleaner transition than trying to patch the older JWT standard.</p>
+<p>If you are looking for a modern path, I’d keep a close eye on <strong>PASETO</strong>. Unlike JWT, which is a bit of a "choose your own adventure" when it comes to security, PASETO is designed to be versioned. The upcoming <a rel="external" href="https://github.com/paseto-standard/paseto-spec/pull/36">Post-Quantum PASETO (v5, v6)</a> are specifically built to swap out vulnerable curves for these new, quantum-safe signatures. It’s a much cleaner transition than trying to patch the older JWT standard.</p>
 <h2 id="what-we-should-actually-do-today">What We Should Actually Do Today</h2>
 <p>You don't need to rewrite your entire auth service this afternoon. But if you’re making architectural decisions now, there are two things worth doing.</p>
 <p>First, if you're using symmetric signing (like HMAC-SHA256), make sure your secrets are at least 256 bits long. While quantum computers can speed up brute-force attacks (Grover’s Algorithm), they don't "break" symmetric encryption the way they break RSA. Doubling your key size is a cheap and effective shield.</p>
